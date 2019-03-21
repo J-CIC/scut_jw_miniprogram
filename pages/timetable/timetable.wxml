@@ -1,0 +1,41 @@
+<image class="png" mode="widthFix" src="/images/wave.gif" style="width:100%;height:486rpx"></image>
+<view class="text-center" style="margin-top:10%;margin-bottom:5%;">
+    <open-data class="personlAvatar" type="userAvatarUrl"></open-data>
+</view>
+<view class="bg-white padding  margin-top-xs">
+    <view class="cu-steps steps-arrow">
+        <view class="cu-item {{index>steps?'':'text-blue'}}" wx:for="{{basicsList}}">
+            <text class="icon-{{item.icon}}"></text> {{item.name}}
+    </view>
+    </view>
+</view>
+<form bindsubmit="submitForm">
+    <view class="cu-form-group">
+        <view class="title">账号</view>
+        <input class="radius" name="xh" placeholder="学号" value="{{xh}}"></input>
+    </view>
+    <view class="cu-form-group">
+        <view class="title">密码</view>
+        <input class="radius" name="pwd" placeholder="教务系统密码" type="password" value="{{pwd}}"></input>
+    </view>
+    <view class="cu-form-group">
+        <view class="title">记住我</view>
+        <switch bindchange="changeSwitch" checked="{{remember}}" data-target="Modal"></switch>
+    </view>
+    <view class="padding flex flex-direction">
+        <button class="cu-btn bg-green lg" formType="submit">登录</button>
+    </view>
+</form>
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+    <view class="cu-dialog">
+        <view class="cu-bar bg-white justify-end">
+            <view class="content">提示</view>
+            <view bindtap="hideModal" class="action">
+                <text class="icon-close text-red"></text>
+            </view>
+        </view>
+        <view class="padding-xl">
+      {{msg}}
+    </view>
+    </view>
+</view>

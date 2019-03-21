@@ -1,0 +1,20 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/score/score",
+        "pages/scoreNew/scoreNew",
+        "pages/scoreResult/scoreResult",
+        "pages/scoreResultNew/scoreResultNew",
+        "pages/timetable/timetable",
+        "pages/timetableNew/timetableNew",
+        "pages/feedback/feedback",
+        "pages/classResult/classResult",
+        "pages/classResultNew/classResultNew"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#39b54a",
+        "navigationBarTitleText": "Color UI",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+    }
+}

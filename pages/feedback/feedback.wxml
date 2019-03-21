@@ -1,0 +1,30 @@
+<view style="backgroud:black;"></view>
+<image class="png" mode="widthFix" src="/images/wave.gif" style="width:100%;height:486rpx"></image>
+<view class="text-center" style="margin-top:10%;margin-bottom:5%;">
+    <open-data class="personlAvatar" type="userAvatarUrl"></open-data>
+</view>
+<view class="padding text-center">
+    <view class="padding-lr bg-white">
+        <view class="solid-bottom padding">
+            <text class="padding ">反馈</text>
+        </view>
+        <view class="padding-top-xl text-left">如需反馈问题，请邮件以下邮箱</view>
+        <view class="padding-top-xl padding-bottom-xl text-left">admin@withcic.cn</view>
+    </view>
+</view>
+<view class="padding text-center">
+    <view class="padding-lr bg-white">
+        <view class="solid-bottom padding">
+            <text class="padding ">反馈群</text>
+        </view>
+        <image bindlongtap="showFeedbackImage" bindtap="showFeedbackImage" mode="aspectFit" src="http://wechat.withcic.cn/DailyPush/Public/feedback.jpg" style="margin-top:50rpx;margin-bottom:50rpx;"></image>
+    </view>
+</view>
+<view class="padding text-center">
+    <view class="padding-lr bg-white">
+        <view class="solid-bottom padding">
+            <text class="padding ">赞助</text>
+        </view>
+        <image bindlongtap="showImage" bindtap="showImage" mode="aspectFit" src="../../images/support.jpg" style="margin-top:50rpx;margin-bottom:50rpx;"></image>
+    </view>
+</view>

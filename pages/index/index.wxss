@@ -1,0 +1,7 @@
+page {
+    padding-bottom: 100rpx;
+}
+
+.content {
+    padding-top: 80rpx;
+}

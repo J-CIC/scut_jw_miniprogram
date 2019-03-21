@@ -1,0 +1,15 @@
+<image class="png" mode="widthFix" src="/images/wave.gif" style="width:100%;height:486rpx"></image>
+<view class="text-center" style="margin-top:10%;margin-bottom:5%;">
+    <open-data class="personlAvatar" type="userAvatarUrl"></open-data>
+</view>
+<view class="padding text-center" wx:for="{{scoreList}}" wx:for-item="itemName">
+    <view class="padding-lr bg-white">
+        <view class="solid-bottom padding">
+            <text class="padding ">{{itemName.name}}</text>
+        </view>
+        <view class="padding-top-xs text-left">成绩：{{itemName.score}}</view>
+        <view class="padding-top-xs text-left">学分：{{itemName.point}}</view>
+        <view class="padding-top-xs text-left">绩点：{{itemName.gpa}}</view>
+        <view class="padding-top-xs padding-bottom-sm text-left">排名(新版无该数据)：{{itemName.rank}}</view>
+    </view>
+</view>
