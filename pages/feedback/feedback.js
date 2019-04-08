@@ -2,13 +2,14 @@ Page({
     data: {},
     showImage: function() {
         wx.previewImage({
-            urls: [ "http://wechat.withcic.cn/DailyPush/Public/my.png" ]
+            urls: [ "http://wechat.withcic.cn/DailyPush/Public/my.png"]
         });
     },
     showFeedbackImage: function() {
-        wx.previewImage({
-            urls: [ "http://wechat.withcic.cn/DailyPush/Public/feedback.jpg" ]
-        });
+      var r = Math.random()
+      wx.previewImage({
+        urls: ["http://wechat.withcic.cn/DailyPush/Public/feedback.jpg?rand=" + r]
+      });
     },
     onLoad: function(n) {},
     onReady: function() {},

@@ -2,15 +2,15 @@ getApp();
 
 Page({
     data: {
-        elements: [ {
+      elements: [{
+          title: "查课表（教务入口）",
+          name: "timetable",
+          showName: "timetable",
+          color: "blue",
+          icon: "time"
+        }, {
             title: "查课表(统一认证入口)",
             name: "timetableNew",
-            showName: "timetable",
-            color: "blue",
-            icon: "time"
-        }, {
-            title: "查课表（教务入口）",
-            name: "timetable",
             showName: "timetable",
             color: "blue",
             icon: "time"
